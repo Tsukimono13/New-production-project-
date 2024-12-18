@@ -6,15 +6,16 @@ import { useTheme } from "./providers/ThemeProvider";
 import { MainPage } from "pages/MainPage";
 import { AboutPage } from "pages/AboutPage";
 import { AppRouter } from "./providers/ThemeProvider/router";
+import { Navbar } from "widgets/Navbar";
 
 export const App = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <div className={classNames("app", {}, [theme])}>
+      <Navbar />
+
       <button onClick={toggleTheme}>Toggle theme</button>
-      <Link to="/">Главная</Link>
-      <Link to="/about">О нас</Link>
       <AppRouter />
     </div>
   );
