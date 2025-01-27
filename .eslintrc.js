@@ -65,6 +65,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'linebreak-style': 'off',
     },
     globals: {
         __IS_DEV__: true,

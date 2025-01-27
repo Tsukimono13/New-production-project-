@@ -19,5 +19,5 @@
       "module": "CommonJS"
     }
   },
-  "include": ["./src", ".eslintrc.js"]
+  "include": ["./src", ".eslintrc.js", "config/jest/*"]
 }
