@@ -29,20 +29,12 @@ export default {
     ],
     moduleDirectories: [
         'node_modules',
-        'src',
     ],
     testMatch: [
+        // Обнаружил разницу между МАК ОС и ВИНДОУС!!!
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
     rootDir: '../../',
-    transform: {
-        '^.+\\.(ts|tsx)$': 'ts-jest', // добавляем поддержку TypeScript
-    },
-    globals: {
-        'ts-jest': {
-            tsconfig: '<rootDir>/tsconfig.json', // укажите путь к tsconfig.json
-        },
-    },
     // Indicates whether the coverage information should be collected while executing the test
     // collectCoverage: false,
 
